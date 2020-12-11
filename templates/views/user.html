@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>API: User Information</title>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="padding-top: 3em">
+    <h1 style="padding-bottom: 0.2em">User Information</h1>
+</div>
+<form>
+    <div class="container">
+        <div class="form-group row">
+            <label for="id_row" class="col-sm-1 col-form-label"> ID: </label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="id_row" value={{ user_id }}>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="jwt_row" class="col-sm-1 col-form-label"> JWT: </label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="jwt_row" value={{ user_jwt }}>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

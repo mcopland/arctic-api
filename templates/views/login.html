@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>API: Grant Access</title>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="padding-top: 3em">
+    <h1 style="padding-bottom: 0.2em">Login</h1>
+    <p>Use the link below to grant access.</p>
+    <a href={{ oauth_link }}><button class="button" type="submit">Sign into Google</button></a>
+</div>
+{% endblock %}
